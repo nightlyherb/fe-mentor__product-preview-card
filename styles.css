@@ -37,6 +37,8 @@
   padding: 16px;
 }
 
+/* Mobile Layout */
+
 :where(.product) {
   --border-radius: 6px;
   overflow: hidden;
@@ -111,6 +113,22 @@
   font-weight: 700;
   background-color: var(--dark-cyan);
   color: white;
+}
+
+/* Desktop Layout */
+
+@media (min-width: 480px) {
+  :where(.product) {
+    display: flex;
+  }
+
+  :where(.product .image) {
+    width: 50%;
+  }
+
+  :where(.product .content) {
+    width: 50%;
+  }
 }
 
 /* Attribution */
