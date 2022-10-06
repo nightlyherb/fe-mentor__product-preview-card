@@ -47,6 +47,10 @@
   background-color: white;
 }
 
+:where(.product img) {
+  object-fit: cover;
+}
+
 :where(.product .content) {
   padding: 16px;
 }
