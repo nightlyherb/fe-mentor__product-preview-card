@@ -25,11 +25,21 @@
   <body>
     <main>
       <section class="product">
-        <img
-          src="images/image-product-desktop.jpg"
-          alt="Product image of Gabrielle Essence Eau De Parfum"
-          width="100%"
-        />
+        <picture>
+          <source
+            media="(max-width: 479px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <source
+            media="(min-width: 480px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <img
+            src="images/image-product-desktop.jpg"
+            alt="Product image of Gabrielle Essence Eau De Parfum"
+            width="100%"
+          />
+        </picture>
 
         <div class="content">
           <div class="category">PERFUME</div>
