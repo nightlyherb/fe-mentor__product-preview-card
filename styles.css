@@ -8,6 +8,7 @@
 :root {
   /* Primary */
   --dark-cyan: hsl(158, 36%, 37%);
+  --dark-dark-cyan: hsl(158, 36%, 14%);
   --cream: hsl(32, 38%, 92%);
 
   /* Neutral */
@@ -19,7 +20,6 @@
 :where(p) {
   font-size: 14px;
 }
-
 
 /* Main style */
 
@@ -117,6 +117,10 @@
   font-weight: 700;
   background-color: var(--dark-cyan);
   color: white;
+}
+
+:where(.product .add-to-cart:hover, .product .add-to-cart:active) {
+  background-color: var(--dark-dark-cyan);
 }
 
 /* Desktop Layout */
